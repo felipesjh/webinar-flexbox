@@ -1,33 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Exemplo de CSS Flexbox</title>
-    <style>
-      /* Estilos CSS para o container flex */
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      
-      /* Estilos CSS para os itens flex */
-      .item {
-        flex: 1 0 200px;
-        margin: 10px;
-        text-align: center;
-        background-color: #e1e1e1;
-        padding: 20px;
-        border-radius: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="item">Item 1</div>
-      <div class="item">Item 2</div>
-      <div class="item">Item 3</div>
-      <div class="item">Item 4</div>
-      <div class="item">Item 5</div>
-    </div>
-  </body>
+  <style>
+    header, section{
+    width: 100%;
+    background: #555;
+}
+
+ul{
+    display: flex;
+    list-style:none;
+}
+
+ul a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+ul a:hover{
+  color: #f00;
+  padding: 10px;
+}
+
+.container-header{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-galeria{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+figure{
+    height: 50px;
+    width:100px;
+}
+
+figure img{
+    height: 100%;
+    width: 100%;
+}
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png">
+            <nav>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Servicos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container-galeria">
+            <figure><img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png"></figure>
+            <figure><img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png"></figure>
+            <figure><img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png"></figure>
+            <figure><img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png"></figure>
+            <figure><img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png"></figure>
+            <figure><img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png"></figure>
+            <figure><img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png"></figure>
+            <figure><img src="https://polibox.ind.br/wp-content/uploads/2019/01/senai.png"></figure>
+        </div>
+    </section>
+
+</body>
+
 </html>
